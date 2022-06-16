@@ -535,7 +535,7 @@ function lib:Window(text, preset, closebind)
 		Tab.BackgroundTransparency = 0.9
 		Tab.BorderSizePixel = 0
 		Tab.Position = UDim2.new(0.25400001, 0, 0.147, 0)
-		Tab.Size = UDim2.new(0, 373, 0, 254)
+		Tab.Size = UDim2.new(0, 361, 0, 243)
 		Tab.CanvasSize = UDim2.new(0, 0, 0, 0)
 		Tab.ScrollBarThickness = 3
 		Tab.Visible = false
@@ -1564,7 +1564,7 @@ function lib:Window(text, preset, closebind)
 			LabelTitle.BackgroundTransparency = 1.000
 			LabelTitle.Position = UDim2.new(0.0358126722, 0, 0, 0)
 			LabelTitle.Font = Enum.Font.Gotham
-			LabelTitle.Size = UDim2.new(0, 359, 0, 42)
+			LabelTitle.Size = UDim2.new(0, 361, 0, 50)
 			LabelTitle.Text = text
 			LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			LabelTitle.TextSize = 14.000
