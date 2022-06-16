@@ -98,6 +98,7 @@ function lib:Window(text, preset, closebind)
 	local DragFrame = Instance.new("Frame")
 	local WindowStroke = Instance.new("UIStroke")
 	local Frame_2 = Instance.new("Frame")
+	local Frame_3 = Instance.new("Frame")
 
 	Main.Name = "Main"
 	Main.Parent = knixhub
@@ -112,8 +113,14 @@ function lib:Window(text, preset, closebind)
 	Frame_2.Parent = Main
 	Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Frame_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-	Frame_2.Position = UDim2.new(0, 0, 0.143769965, 0)
+	Frame_2.Position = UDim2.new(0, 0, 0.111821085, 0)
 	Frame_2.Size = UDim2.new(0, 0,0.112, 0)
+	
+	Frame_3.Parent = Main
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.Position = UDim2.new(0.239999995, 0, 0.111821085, 0)
+Frame_3.Size = UDim2.new(0, 0, 0, 278)
 
 	WindowStroke.Name = "WindowStroke"
 	WindowStroke.Parent = Main
