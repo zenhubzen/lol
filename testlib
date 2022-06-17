@@ -595,7 +595,7 @@ function lib:Window(text, preset, closebind)
 			Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Button.TextSize = 14.000
 
-			ButtonCorner.CornerRadius = UDim.new(0, 8)
+			ButtonCorner.CornerRadius = UDim.new(0, 10)
 			ButtonCorner.Name = "ButtonCorner"
 			ButtonCorner.Parent = Button
 
@@ -660,7 +660,7 @@ function lib:Window(text, preset, closebind)
 			Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Toggle.TextSize = 14.000
 
-			ToggleCorner.CornerRadius = UDim.new(0, 8)
+			ToggleCorner.CornerRadius = UDim.new(0, 10)
 			ToggleCorner.Name = "ToggleCorner"
 			ToggleCorner.Parent = Toggle
 
@@ -836,7 +836,7 @@ function lib:Window(text, preset, closebind)
 			Slider.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Slider.TextSize = 14.000
 
-			SliderCorner.CornerRadius = UDim.new(0, 8)
+			SliderCorner.CornerRadius = UDim.new(0, 10)
 			SliderCorner.Name = "SliderCorner"
 			SliderCorner.Parent = Slider
 
@@ -959,7 +959,7 @@ function lib:Window(text, preset, closebind)
 			Dropdown.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
 			Dropdown.Size = UDim2.new(0, 364, 0, 40)
 
-			DropdownCorner.CornerRadius = UDim.new(0, 8)
+			DropdownCorner.CornerRadius = UDim.new(0, 10)
 			DropdownCorner.Name = "DropdownCorner"
 			DropdownCorner.Parent = Dropdown
 
@@ -1590,7 +1590,7 @@ function lib:Window(text, preset, closebind)
 			Textbox.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
 			Textbox.Size = UDim2.new(0, 364, 0, 40)
 
-			TextboxCorner.CornerRadius = UDim.new(0, 8)
+			TextboxCorner.CornerRadius = UDim.new(0, 10)
 			TextboxCorner.Name = "TextboxCorner"
 			TextboxCorner.Parent = Textbox
 
