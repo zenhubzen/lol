@@ -26,12 +26,10 @@ local ScreenGui = Instance.new("ScreenGui")
     Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
     Toggle.TextScaled = true
     Toggle.MouseButton1Down:connect(function()
-        local Frame = script.Parent.Parent.Main
-local Button = script.Parent
-if Frame.Visible == false then
-Frame.Visible = true
+if Main.Visible == false then
+Main.Visible = true
 else
-Frame.Visible = false
+Main.Visible = false
     end
 end)
 local knixhub = Instance.new("ScreenGui")
