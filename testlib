@@ -489,8 +489,8 @@ function lib:Window(text, preset, closebind)
 		TabBtn.Name = "TabBtn"
 		TabBtn.Parent = TabHold
 		TabBtn.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-		TabBtn.BackgroundTransparency = 0.5
-		TabBtn.Size = UDim2.new(0, 111,0, 31)
+		TabBtn.BackgroundTransparency = 0.2
+		TabBtn.Size = UDim2.new(0, 111,0, 28)
 		TabBtn.Font = Enum.Font.SourceSans
 		TabBtn.Text = ""
 		TabBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -595,7 +595,7 @@ function lib:Window(text, preset, closebind)
 			Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Button.TextSize = 14.000
 
-			ButtonCorner.CornerRadius = UDim.new(0, 5)
+			ButtonCorner.CornerRadius = UDim.new(0, 8)
 			ButtonCorner.Name = "ButtonCorner"
 			ButtonCorner.Parent = Button
 
@@ -660,7 +660,7 @@ function lib:Window(text, preset, closebind)
 			Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Toggle.TextSize = 14.000
 
-			ToggleCorner.CornerRadius = UDim.new(0, 5)
+			ToggleCorner.CornerRadius = UDim.new(0, 8)
 			ToggleCorner.Name = "ToggleCorner"
 			ToggleCorner.Parent = Toggle
 
@@ -836,7 +836,7 @@ function lib:Window(text, preset, closebind)
 			Slider.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Slider.TextSize = 14.000
 
-			SliderCorner.CornerRadius = UDim.new(0, 5)
+			SliderCorner.CornerRadius = UDim.new(0, 8)
 			SliderCorner.Name = "SliderCorner"
 			SliderCorner.Parent = Slider
 
@@ -959,7 +959,7 @@ function lib:Window(text, preset, closebind)
 			Dropdown.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
 			Dropdown.Size = UDim2.new(0, 362, 0, 40)
 
-			DropdownCorner.CornerRadius = UDim.new(0, 5)
+			DropdownCorner.CornerRadius = UDim.new(0, 8)
 			DropdownCorner.Name = "DropdownCorner"
 			DropdownCorner.Parent = Dropdown
 
@@ -1550,7 +1550,7 @@ function lib:Window(text, preset, closebind)
 			Label.Parent = Tab
 			Label.BackgroundTransparency = 1.00
 			Label.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-			Label.Size = UDim2.new(0, 362, 0, 40)
+			Label.Size = UDim2.new(0, 359, 0, 40)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.SourceSans
 			Label.Text = ""
@@ -1590,7 +1590,7 @@ function lib:Window(text, preset, closebind)
 			Textbox.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
 			Textbox.Size = UDim2.new(0, 362, 0, 40)
 
-			TextboxCorner.CornerRadius = UDim.new(0, 5)
+			TextboxCorner.CornerRadius = UDim.new(0, 8)
 			TextboxCorner.Name = "TextboxCorner"
 			TextboxCorner.Parent = Textbox
 
