@@ -490,7 +490,7 @@ function lib:Window(text, preset, closebind)
 		TabBtn.Name = "TabBtn"
 		TabBtn.Parent = TabHold
 		TabBtn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-		TabBtn.BackgroundTransparency = 0
+		TabBtn.BackgroundTransparency = 1
 		TabBtn.Size = UDim2.new(0, 111,0, 31)
 		TabBtn.Font = Enum.Font.SourceSans
 		TabBtn.Text = ""
@@ -500,8 +500,8 @@ function lib:Window(text, preset, closebind)
 		UICornerl.Parent = TabBtn
 
 WindowStroke1.Name = "WindowStroke"
-	WindowStroke.Parent = Main
-	WindowStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	WindowStroke1.Parent = Main
+	WindowStroke1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 	WindowStroke1.Color = Color3.fromRGB(255,255,255)
 	WindowStroke1.LineJoinMode = Enum.LineJoinMode.Round
 	WindowStroke1.Thickness = 1
