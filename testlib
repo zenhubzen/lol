@@ -488,7 +488,7 @@ function lib:Window(text, preset, closebind)
 		TabBtn.Name = "TabBtn"
 		TabBtn.Parent = TabHold
 		TabBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TabBtn.BackgroundTransparency = 1.000
+		TabBtn.BackgroundTransparency = 0.5
 		TabBtn.Size = UDim2.new(0, 111,0, 31)
 		TabBtn.Font = Enum.Font.SourceSans
 		TabBtn.Text = ""
