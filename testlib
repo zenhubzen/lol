@@ -546,7 +546,7 @@ function lib:Window(text, preset, closebind)
 		TabLayout.Name = "TabLayout"
 		TabLayout.Parent = Tab
 		TabLayout.SortOrder = Enum.SortOrder.LayoutOrder
-		TabLayout.Padding = UDim.new(0, 7)
+		TabLayout.Padding = UDim.new(0, 5)
 
 		if fs == false then
 			fs = true
