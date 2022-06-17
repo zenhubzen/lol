@@ -115,7 +115,7 @@ function lib:Window(text, preset, closebind)
 	Frame_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
 	Frame_2.BorderSizePixel = 0
 	Frame_2.Position = UDim2.new(0, 0, 0.134185299, 0)
-	Frame_2.Size = UDim2.new(0, 500, 0, 2)
+	Frame_2.Size = UDim2.new(0, 500, 0, 1)
 
 	Frame_3.Parent = Main
 	Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -140,8 +140,8 @@ function lib:Window(text, preset, closebind)
 	TabHold.Parent = Main
 	TabHold.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 	TabHold.BackgroundTransparency = 1.00
-	TabHold.Position = UDim2.new(0.0339285731, 0, 0.147335425, 0)
-	TabHold.Size = UDim2.new(0, 107, 0, 254)
+	TabHold.Position = UDim2.new(0.01, 0,0.176, 0)
+	TabHold.Size = UDim2.new(0, 109,0, 257)
 	TabHold.BorderColor3 = Color3.fromRGB(255, 255, 255)
 	TabHold.BorderSizePixel = 0
 
@@ -154,12 +154,12 @@ function lib:Window(text, preset, closebind)
 	Title.Parent = Main
 	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Title.BackgroundTransparency = 1.000
-	Title.Position = UDim2.new(0.0339285731, 0, 0.0564263314, 0)
-	Title.Size = UDim2.new(0, 200, 0, 23)
-	Title.Font = Enum.Font.GothamSemibold
+	Title.Position = UDim2.new(0.0199999996, 0, 0, 0)
+	Title.Size = UDim2.new(0, 216, 0, 40)
+	Title.Font = Enum.Font.SourceSansBold
 	Title.Text = text
 	Title.TextColor3 = Color3.fromRGB(68, 68, 68)
-	Title.TextSize = 12.000
+	Title.TextSize = 15.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 	DragFrame.Name = "DragFrame"
@@ -488,8 +488,8 @@ function lib:Window(text, preset, closebind)
 		TabBtn.Name = "TabBtn"
 		TabBtn.Parent = TabHold
 		TabBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TabBtn.BackgroundTransparency = 0
-		TabBtn.Size = UDim2.new(0, 107, 0, 21)
+		TabBtn.BackgroundTransparency = 1.000
+		TabBtn.Size = UDim2.new(0, 111,0, 31)
 		TabBtn.Font = Enum.Font.SourceSans
 		TabBtn.Text = ""
 		TabBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -537,7 +537,7 @@ function lib:Window(text, preset, closebind)
 		Tab.Position = UDim2.new(0.25400001, 0, 0.147, 0)
 		Tab.Size = UDim2.new(0, 361, 0, 243)
 		Tab.CanvasSize = UDim2.new(0, 0, 0, 0)
-		Tab.ScrollBarThickness = 3
+		Tab.ScrollBarThickness = 0
 		Tab.Visible = false
 
 		TabLayout.Name = "TabLayout"
@@ -585,7 +585,7 @@ function lib:Window(text, preset, closebind)
 			Button.Name = "Button"
 			Button.Parent = Tab
 			Button.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-			Button.Size = UDim2.new(0, 350, 0, 39)
+			Button.Size = UDim2.new(0, 363, 0, 42)
 			Button.AutoButtonColor = false
 			Button.Font = Enum.Font.SourceSans
 			Button.Text = ""
@@ -650,7 +650,7 @@ function lib:Window(text, preset, closebind)
 			Toggle.Parent = Tab
 			Toggle.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 			Toggle.Position = UDim2.new(0.215625003, 0, 0.446271926, 0)
-			Toggle.Size = UDim2.new(0, 350, 0, 39)
+			Toggle.Size = UDim2.new(0, 363, 0, 42)
 			Toggle.AutoButtonColor = false
 			Toggle.Font = Enum.Font.SourceSans
 			Toggle.Text = ""
@@ -954,7 +954,7 @@ function lib:Window(text, preset, closebind)
 			Dropdown.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 			Dropdown.ClipsDescendants = true
 			Dropdown.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
-			Dropdown.Size = UDim2.new(0, 350, 0, 39)
+			Dropdown.Size = UDim2.new(0, 363, 0, 42)
 
 			DropdownCorner.CornerRadius = UDim.new(0, 5)
 			DropdownCorner.Name = "DropdownCorner"
@@ -964,7 +964,7 @@ function lib:Window(text, preset, closebind)
 			DropdownBtn.Parent = Dropdown
 			DropdownBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropdownBtn.BackgroundTransparency = 1.000
-			DropdownBtn.Size = UDim2.new(0, 350, 0, 39)
+			DropdownBtn.Size = UDim2.new(0, 363, 0, 42)
 			DropdownBtn.Font = Enum.Font.SourceSans
 			DropdownBtn.Text = ""
 			DropdownBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1016,7 +1016,7 @@ function lib:Window(text, preset, closebind)
 					wait(.2)
 					Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 				else
-					Dropdown:TweenSize(UDim2.new(0, 350, 0, 39), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
+					Dropdown:TweenSize(UDim2.new(0, 363, 0, 42), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 					TweenService:Create(
 						ArrowImg,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -1072,7 +1072,7 @@ function lib:Window(text, preset, closebind)
 					droptog = not droptog
 					DropdownTitle.Text = text .. " - " .. v
 					pcall(callback, v)
-					Dropdown:TweenSize(UDim2.new(0, 350, 0, 39), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
+					Dropdown:TweenSize(UDim2.new(0, 363, 0, 42), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 					TweenService:Create(
 						ArrowImg,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -1132,7 +1132,7 @@ function lib:Window(text, preset, closebind)
 			Colorpicker.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 			Colorpicker.ClipsDescendants = true
 			Colorpicker.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
-			Colorpicker.Size = UDim2.new(0, 350, 0, 39)
+			Colorpicker.Size = UDim2.new(0, 363, 0, 42)
 
 			ColorpickerCorner.CornerRadius = UDim.new(0, 5)
 			ColorpickerCorner.Name = "ColorpickerCorner"
@@ -1190,7 +1190,7 @@ function lib:Window(text, preset, closebind)
 			ColorpickerBtn.Parent = ColorpickerTitle
 			ColorpickerBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ColorpickerBtn.BackgroundTransparency = 1.000
-			ColorpickerBtn.Size = UDim2.new(0, 350, 0, 39)
+			ColorpickerBtn.Size = UDim2.new(0, 363, 0, 42)
 			ColorpickerBtn.Font = Enum.Font.SourceSans
 			ColorpickerBtn.Text = ""
 			ColorpickerBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1332,7 +1332,7 @@ function lib:Window(text, preset, closebind)
 				else
 					ColorSelection.Visible = false
 					HueSelection.Visible = false
-					Colorpicker:TweenSize(UDim2.new(0, 350, 0, 39), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
+					Colorpicker:TweenSize(UDim2.new(0, 363, 0, 42), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 					wait(.2)
 					Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 				end
@@ -1531,7 +1531,7 @@ function lib:Window(text, preset, closebind)
 				function()
 					ColorSelection.Visible = false
 					HueSelection.Visible = false
-					Colorpicker:TweenSize(UDim2.new(0, 350, 0, 39), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
+					Colorpicker:TweenSize(UDim2.new(0, 363, 0, 42), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 					wait(.2)
 					Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 				end
@@ -1547,7 +1547,7 @@ function lib:Window(text, preset, closebind)
 			Label.Parent = Tab
 			Label.BackgroundTransparency = 1.00
 			Label.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-			Label.Size = UDim2.new(0, 350, 0, 39)
+			Label.Size = UDim2.new(0, 363, 0, 42)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.SourceSans
 			Label.Text = ""
@@ -1585,7 +1585,7 @@ function lib:Window(text, preset, closebind)
 			Textbox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 			Textbox.ClipsDescendants = true
 			Textbox.Position = UDim2.new(-0.541071415, 0, -0.532915354, 0)
-			Textbox.Size = UDim2.new(0, 350, 0, 39)
+			Textbox.Size = UDim2.new(0, 363, 0, 42)
 
 			TextboxCorner.CornerRadius = UDim.new(0, 5)
 			TextboxCorner.Name = "TextboxCorner"
@@ -1647,7 +1647,7 @@ function lib:Window(text, preset, closebind)
 			Bind.Name = "Bind"
 			Bind.Parent = Tab
 			Bind.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-			Bind.Size = UDim2.new(0, 350, 0, 39)
+			Bind.Size = UDim2.new(0, 363, 0, 42)
 			Bind.AutoButtonColor = false
 			Bind.Font = Enum.Font.SourceSans
 			Bind.Text = ""
