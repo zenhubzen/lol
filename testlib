@@ -515,7 +515,7 @@ function lib:Window(text, preset, closebind)
 		TabBtn.Parent = TabHold
 		TabBtn.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 		TabBtn.BackgroundTransparency = 0.2
-		TabBtn.Size = UDim2.new(0, 111,0, 28)
+		TabBtn.Size = UDim2.new(0, 111,0, 30)
 		TabBtn.Font = Enum.Font.SourceSans
 		TabBtn.Text = ""
 		TabBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -538,7 +538,7 @@ function lib:Window(text, preset, closebind)
 		TabBtnIndicator.Parent = TabBtn
 		TabBtnIndicator.BackgroundColor3 = PresetColor
 		TabBtnIndicator.BorderSizePixel = 0
-		TabBtnIndicator.Position = UDim2.new(0, 0, 1, 0)
+		TabBtnIndicator.Position = UDim2.new(0, 0, 0, 0)
 		TabBtnIndicator.Size = UDim2.new(0, 0, 0, 2)
 
 		TabBtnIndicatorCorner.Name = "TabBtnIndicatorCorner"
