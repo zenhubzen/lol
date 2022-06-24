@@ -63,7 +63,7 @@ function library:Create(class, properties)
 end
 
 local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
-	local size = subHolder and 100 or 130
+	local size = subHolder and 20 or 40
 	parentTable.main = library:Create("ImageButton", {
 		LayoutOrder = subHolder and parentTable.position or 0,
 		Position = UDim2.new(0, 20 + (250 * (parentTable.position or 0)), 0, 20),
