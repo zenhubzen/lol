@@ -51,14 +51,13 @@ function RUN_FUNCTION(name, extension, configOpt)
     end
     
     spawn(function()
-     local BlueXLoader = Instance.new("ScreenGui")
+        local BlueXLoader = Instance.new("ScreenGui")
         local Loader = Instance.new("Frame")
-    local Menu = Instance.new("Frame")
-    local WindowCorner = Instance.new("UICorner")
-    local BlackImage = Instance.new("ImageLabel")
+        local UICorner = Instance.new("UICorner")
+        local Menu = Instance.new("Frame")
+        local UICorner_2 = Instance.new("UICorner")
+        local BlackImage = Instance.new("ImageLabel")
     local Title = Instance.new("TextLabel")
-    local Lines = Instance.new("Frame")
-    local WindowStroke = Instance.new("UIStroke")
         local LoadBar = Instance.new("Frame")
         local UICorner_3 = Instance.new("UICorner")
         local Bar = Instance.new("Frame")
@@ -70,49 +69,41 @@ function RUN_FUNCTION(name, extension, configOpt)
         BlueXLoader.ResetOnSpawn = false
 
         Loader.Name = "Loader"
-    Loader.Parent = BlueXLoader
-    Loader.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    Loader.BackgroundTransparency = 1.000
-    Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Loader.Size = UDim2.new(0, 400, 0, 250)
-    
-    WindowStroke.Name = "WindowStroke"
-    WindowStroke.Parent = Menu
-    WindowStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    WindowStroke.Color = Color3.fromRGB(255,255,255)
-    WindowStroke.LineJoinMode = Enum.LineJoinMode.Round
-    WindowStroke.Thickness = 2
-    WindowStroke.Transparency = 0
-    WindowStroke.Enabled = true
-    WindowStroke.Archivable = true
-    
-    Menu.Name = "Menu"
-    Menu.Parent = Loader
-    Menu.AnchorPoint = Vector2.new(0.5, 0.5)
-    Menu.BackgroundColor3 = Color3.fromRGB(25,25,25)
-    Menu.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Menu.BorderSizePixel = 0
-    Menu.Size = UDim2.new(0, 0, 0, 0)
-    Menu.ClipsDescendants = true
-    
-    WindowCorner.Name = "WindowCorner"
-    WindowCorner.Parent = Menu
-    WindowCorner.CornerRadius = UDim.new(0, 7)
-    
-    BlackImage.Name = "BlackImage"
+        Loader.Parent = BlueXLoader
+        Loader.AnchorPoint = Vector2.new(0.5, 0.5)
+        Loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Loader.BorderColor3 = Color3.fromRGB(255, 255, 255)
+        Loader.BorderSizePixel = 2
+        Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
+        Loader.Size = UDim2.new(0, 0,  0, 0)
+
+        UICorner.CornerRadius = UDim.new(0, 6)
+        UICorner.Parent = Loader
+
+        Menu.Name = "Menu"
+        Menu.Parent = Loader
+        Menu.AnchorPoint = Vector2.new(0.5, 0.5)
+        Menu.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+        Menu.Position = UDim2.new(0.5, 0, 0.5, 0)
+        Menu.Size = UDim2.new(1, -4, 1, -4)
+
+        UICorner_2.CornerRadius = UDim.new(0, 6)
+        UICorner_2.Parent = Menu
+
+        BlackImage.Name = "BlackImage"
     BlackImage.Parent = Menu
     BlackImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     BlackImage.BackgroundTransparency = 1.000
     BlackImage.Position = UDim2.new(0, 5, 0, 7)
     BlackImage.Size = UDim2.new(0, 20, 0, 20)
     BlackImage.Image = "rbxassetid://9896553189"
-    BlackImage.ImageColor3 = Color3.fromRGB(0,200,0)
+    BlackImage.ImageColor3 = Color3.fromRGB(255,255,255)
     
     Title.Name = "Title"
     Title.Parent = Menu
     Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     Title.BackgroundTransparency = 1.000
-    Title.Position = UDim2.new(0, 30, 0, 5)
+    Title.Position = UDim2.new(0.5, 0, 0, 4)
     Title.Size = UDim2.new(0, 50, 0, 24)
     Title.Font = Enum.Font.SourceSansBold
     Title.Text = "|   ZEN HUB KEY SYSTEM"
@@ -124,16 +115,16 @@ function RUN_FUNCTION(name, extension, configOpt)
     Lines.Parent = Menu
     Lines.BackgroundColor3 = Color3.fromRGB(255,255,255)
     Lines.BorderSizePixel = 0
-    Lines.Position = UDim2.new(0, 5, 0, 32)
-    Lines.Size = UDim2.new(0,290,0,1)
+    Lines.Position = UDim2.new(0.5,0, 0, 6)
+    Lines.Size = UDim2.new(0,280,0,1)
 
         LoadBar.Name = "LoadBar"
         LoadBar.Parent = Menu
         LoadBar.AnchorPoint = Vector2.new(0.5, 0)
         LoadBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         LoadBar.BorderSizePixel = 0
-        LoadBar.Position = UDim2.new(0, 50, 0, 50)
-        LoadBar.Size = UDim2.new(0, 200, 0, 25)
+        LoadBar.Position = UDim2.new(0.5, 0, 1, -28)
+        LoadBar.Size = UDim2.new(1, -28, 0, 20)
         LoadBar.BackgroundTransparency = 1
 
         UICorner_3.CornerRadius = UDim.new(0, 4)
@@ -141,7 +132,7 @@ function RUN_FUNCTION(name, extension, configOpt)
 
         Bar.Name = "Bar"
         Bar.Parent = LoadBar
-        Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Bar.BackgroundColor3 = Color3.fromRGB(50, 50,255)
         Bar.BorderSizePixel = 0
         Bar.Size = UDim2.new(0, 0, 1, 0)
         Bar.ZIndex = 4
@@ -217,7 +208,7 @@ function RUN_FUNCTION(name, extension, configOpt)
             wait(.4)
             Message.Text = "Checking . ."
             wait(.4)
-            Message.Text = "Checking Game . . ."
+            Message.Text = "Checking . . ."
             wait(.4)
         end
         setSize(60)
