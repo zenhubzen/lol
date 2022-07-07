@@ -95,8 +95,6 @@ function RUN_FUNCTION(name, extension, configOpt)
     Menu.Size = UDim2.new(0, 0, 0, 0)
     Menu.ClipsDescendants = true
     
-    Menu:TweenSize(UDim2.new(0, 300, 0, 150), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
-    
     WindowCorner.Name = "WindowCorner"
     WindowCorner.Parent = Menu
     WindowCorner.CornerRadius = UDim.new(0, 7)
@@ -134,8 +132,8 @@ function RUN_FUNCTION(name, extension, configOpt)
         LoadBar.AnchorPoint = Vector2.new(0.5, 0)
         LoadBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         LoadBar.BorderSizePixel = 0
-        LoadBar.Position = UDim2.new(0, 50, 0, 70)
-        LoadBar.Size = UDim2.new(1, -28, 0, 20)
+        LoadBar.Position = UDim2.new(0, 50, 0, 50)
+        LoadBar.Size = UDim2.new(0, 200, 0, 25)
         LoadBar.BackgroundTransparency = 1
 
         UICorner_3.CornerRadius = UDim.new(0, 4)
@@ -143,7 +141,7 @@ function RUN_FUNCTION(name, extension, configOpt)
 
         Bar.Name = "Bar"
         Bar.Parent = LoadBar
-        Bar.BackgroundColor3 = Color3.fromRGB(100, 100, 255)
+        Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Bar.BorderSizePixel = 0
         Bar.Size = UDim2.new(0, 0, 1, 0)
         Bar.ZIndex = 4
