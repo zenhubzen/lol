@@ -60,6 +60,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         local LoadBar = Instance.new("Frame")
         local UICorner_3 = Instance.new("UICorner")
         local Bar = Instance.new("Frame")
+        local Lines = Instance.new("Frame")
         local BlackImage = Instance.new("ImageLabel")
         local UICorner_4 = Instance.new("UICorner")
         local Message = Instance.new("TextLabel")
@@ -96,7 +97,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Title.BackgroundTransparency = 1.000
         Title.BorderSizePixel = 0
-        Title.Position = UDim2.new(0.5, 0, 0, 4)
+        Title.Position = UDim2.new(0.2, 0, 0, 4)
         Title.Size = UDim2.new(1, -6, -0.262604743, 55)
         Title.ZIndex = 4
         Title.Font = Enum.Font.SourceSansBold
@@ -112,7 +113,14 @@ function RUN_FUNCTION(name, extension, configOpt)
     BlackImage.Position = UDim2.new(0, 5, 0, 7)
     BlackImage.Size = UDim2.new(0, 20, 0, 20)
     BlackImage.Image = "rbxassetid://9896553189"
-    BlackImage.ImageColor3 = Color3.fromRGB(0,200,0)
+    BlackImage.ImageColor3 = Color3.fromRGB(255,255,255)
+    
+    Lines.Name = "Lines"
+    Lines.Parent = Menu
+    Lines.BackgroundColor3 = Color3.fromRGB(255,255,255)
+    Lines.BorderSizePixel = 0
+    Lines.Position = UDim2.new(0, 0, 0, 8)
+    Lines.Size = UDim2.new(0,280,0,1)
 
         LoadBar.Name = "LoadBar"
         LoadBar.Parent = Menu
@@ -162,6 +170,18 @@ function RUN_FUNCTION(name, extension, configOpt)
         })
         
         createTween(Title,{TextTransparency = 0}, {
+            Style = Enum.EasingStyle.Linear,
+            Direction = Enum.EasingDirection.In,
+            TIME = .4
+        })
+        
+        createTween(BlackImage,{BackgroundTransparency = 0}, {
+            Style = Enum.EasingStyle.Linear,
+            Direction = Enum.EasingDirection.In,
+            TIME = .4
+        })
+        
+        createTween(Line,{BackgroundTransparency = 0}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
             TIME = .4
