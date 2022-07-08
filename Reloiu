@@ -113,14 +113,8 @@ function RUN_FUNCTION(name, extension, configOpt)
     BlackImage.Position = UDim2.new(0, 5, 0, 7)
     BlackImage.Size = UDim2.new(0, 20, 0, 20)
     BlackImage.Image = "rbxassetid://9896553189"
+    BlackImage.Visible = false
     BlackImage.ImageColor3 = Color3.fromRGB(255,255,255)
-    
-    Lines.Name = "Lines"
-    Lines.Parent = Menu
-    Lines.BackgroundColor3 = Color3.fromRGB(255,255,255)
-    Lines.BorderSizePixel = 0
-    Lines.Position = UDim2.new(0, 0, 0, 8)
-    Lines.Size = UDim2.new(0,280,0,1)
 
         LoadBar.Name = "LoadBar"
         LoadBar.Parent = Menu
@@ -170,18 +164,6 @@ function RUN_FUNCTION(name, extension, configOpt)
         })
         
         createTween(Title,{TextTransparency = 0}, {
-            Style = Enum.EasingStyle.Linear,
-            Direction = Enum.EasingDirection.In,
-            TIME = .4
-        })
-        
-        createTween(BlackImage,{BackgroundTransparency = 0}, {
-            Style = Enum.EasingStyle.Linear,
-            Direction = Enum.EasingDirection.In,
-            TIME = .4
-        })
-        
-        createTween(Lines,{BackgroundTransparency = 0}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
             TIME = .4
@@ -261,12 +243,6 @@ function RUN_FUNCTION(name, extension, configOpt)
             TIME = .4
         })
         
-        createTween(Lines,{BackgroundTransparency = 1}, {
-            Style = Enum.EasingStyle.Linear,
-            Direction = Enum.EasingDirection.In,
-            TIME = .4
-        })
-        
         createTween(BlackImage,{BackgroundTransparency = 1}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
@@ -278,6 +254,7 @@ function RUN_FUNCTION(name, extension, configOpt)
             Direction = Enum.EasingDirection.In,
             TIME = .4
         }).Completed:Wait(1)
+        BlackImage.Visible = true
 	BlueXLoader:Destroy()
     
         loadstring(settings.Executable)()
