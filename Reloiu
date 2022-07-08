@@ -181,7 +181,7 @@ function RUN_FUNCTION(name, extension, configOpt)
             TIME = .4
         })
         
-        createTween(Line,{BackgroundTransparency = 0}, {
+        createTween(Lines,{BackgroundTransparency = 0}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
             TIME = .4
@@ -256,6 +256,18 @@ function RUN_FUNCTION(name, extension, configOpt)
         })
     
         createTween(Title,{TextTransparency = 1}, {
+            Style = Enum.EasingStyle.Linear,
+            Direction = Enum.EasingDirection.In,
+            TIME = .4
+        })
+        
+        createTween(Lines,{BackgroundTransparency = 1}, {
+            Style = Enum.EasingStyle.Linear,
+            Direction = Enum.EasingDirection.In,
+            TIME = .4
+        })
+        
+        createTween(BlackImage,{BackgroundTransparency = 1}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
             TIME = .4
