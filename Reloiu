@@ -56,12 +56,11 @@ function RUN_FUNCTION(name, extension, configOpt)
         local UICorner = Instance.new("UICorner")
         local Menu = Instance.new("Frame")
         local UICorner_2 = Instance.new("UICorner")
-        local BlackImage = Instance.new("ImageLabel")
-    local Title = Instance.new("TextLabel")
-    local Lines = Instance.new("Frame")
+        local Title = Instance.new("TextLabel")
         local LoadBar = Instance.new("Frame")
         local UICorner_3 = Instance.new("UICorner")
         local Bar = Instance.new("Frame")
+        local BlackImage = Instance.new("ImageLabel")
         local UICorner_4 = Instance.new("UICorner")
         local Message = Instance.new("TextLabel")
 
@@ -91,6 +90,21 @@ function RUN_FUNCTION(name, extension, configOpt)
         UICorner_2.CornerRadius = UDim.new(0, 6)
         UICorner_2.Parent = Menu
 
+        Title.Name = "Title"
+        Title.Parent = Menu
+        Title.AnchorPoint = Vector2.new(0.5, 0)
+        Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Title.BackgroundTransparency = 1.000
+        Title.BorderSizePixel = 0
+        Title.Position = UDim2.new(0.5, 0, 0, 4)
+        Title.Size = UDim2.new(1, -6, -0.262604743, 55)
+        Title.ZIndex = 4
+        Title.Font = Enum.Font.SourceSansBold
+        Title.Text = name or "| ZEN HUB"
+        Title.TextColor3 = Color3.fromRGB(197, 197, 197)
+        Title.TextSize = 22.000
+        Title.TextTransparency = 1
+        
         BlackImage.Name = "BlackImage"
     BlackImage.Parent = Menu
     BlackImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -98,26 +112,7 @@ function RUN_FUNCTION(name, extension, configOpt)
     BlackImage.Position = UDim2.new(0, 5, 0, 7)
     BlackImage.Size = UDim2.new(0, 20, 0, 20)
     BlackImage.Image = "rbxassetid://9896553189"
-    BlackImage.ImageColor3 = Color3.fromRGB(255,255,255)
-    
-    Title.Name = "Title"
-    Title.Parent = Menu
-    Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    Title.BackgroundTransparency = 1.000
-    Title.Position = UDim2.new(0.5, 0, 0, 4)
-    Title.Size = UDim2.new(0, 50, 0, 24)
-    Title.Font = Enum.Font.SourceSansBold
-    Title.Text = "|   ZEN HUB KEY SYSTEM"
-    Title.TextColor3 = Color3.fromRGB(255,255,255)
-    Title.TextSize = 14.000
-    Title.TextXAlignment = Enum.TextXAlignment.Left
-    
-    Lines.Name = "Lines"
-    Lines.Parent = Menu
-    Lines.BackgroundColor3 = Color3.fromRGB(255,255,255)
-    Lines.BorderSizePixel = 0
-    Lines.Position = UDim2.new(0.5,0, 0, 6)
-    Lines.Size = UDim2.new(0,280,0,1)
+    BlackImage.ImageColor3 = Color3.fromRGB(0,200,0)
 
         LoadBar.Name = "LoadBar"
         LoadBar.Parent = Menu
@@ -133,7 +128,7 @@ function RUN_FUNCTION(name, extension, configOpt)
 
         Bar.Name = "Bar"
         Bar.Parent = LoadBar
-        Bar.BackgroundColor3 = Color3.fromRGB(50, 50,255)
+        Bar.BackgroundColor3 = Color3.fromRGB(120, 255, 0)
         Bar.BorderSizePixel = 0
         Bar.Size = UDim2.new(0, 0, 1, 0)
         Bar.ZIndex = 4
@@ -153,7 +148,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         Message.SizeConstraint = Enum.SizeConstraint.RelativeXX
         Message.ZIndex = 4
         Message.Font = Enum.Font.SourceSansItalic
-        Message.Text = settings.StartMessage or "Hello, " .. game:GetService("Players").LocalPlayer.Name
+        Message.Text = settings.StartMessage or "Welcome, " .. game:GetService("Players").LocalPlayer.Name
         Message.TextColor3 = Color3.fromRGB(197, 197, 197)
         Message.TextSize = 22.000
         Message.TextTransparency = 1
