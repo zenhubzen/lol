@@ -113,7 +113,7 @@ function RUN_FUNCTION(name, extension, configOpt)
     BlackImage.Position = UDim2.new(0, 5, 0, 7)
     BlackImage.Size = UDim2.new(0, 20, 0, 20)
     BlackImage.Image = "rbxassetid://9896553189"
-    BlackImage.Visible = false
+    BlackImage.Visible = true
     BlackImage.ImageColor3 = Color3.fromRGB(255,255,255)
 
         LoadBar.Name = "LoadBar"
