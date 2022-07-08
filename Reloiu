@@ -163,6 +163,12 @@ function RUN_FUNCTION(name, extension, configOpt)
             TIME = .4
         })
         
+        createTween(BlackImage,{Size = UDim2.new(0, 20, 0, 20)}, {
+            Style = Enum.EasingStyle.Linear,
+            Direction = Enum.EasingDirection.In,
+            TIME = .4
+        })
+        
         createTween(Title,{TextTransparency = 0}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
@@ -249,12 +255,17 @@ function RUN_FUNCTION(name, extension, configOpt)
             TIME = .4
         })
     
+    createTween(BlackImage,{Size = UDim2.new(0, 0, 0, 0)}, {
+            Style = Enum.EasingStyle.Linear,
+            Direction = Enum.EasingDirection.In,
+            TIME = .4
+        }).Completed:Wait(1)
+    
         createTween(Loader,{Size = UDim2.new(0, 0, 0, 0)}, {
             Style = Enum.EasingStyle.Linear,
             Direction = Enum.EasingDirection.In,
             TIME = .4
         }).Completed:Wait(1)
-        BlackImage.Visible = true
 	BlueXLoader:Destroy()
     
         loadstring(settings.Executable)()
