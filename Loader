@@ -76,12 +76,12 @@
    LoadTitle.Size = UDim2.new(0, 200, 0, 23)
    LoadTitle.Font = Enum.Font.GothamSemibold
    LoadTitle.Text = "ZEN HUB"
-   LoadTitle.TextColor3 = Color3.fromRGB(68, 68, 68)
+   LoadTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
    LoadTitle.TextSize = 12.000
    LoadTitle.TextXAlignment = Enum.TextXAlignment.Left
    LoadTitle.TextTransparency = 0
    
-   LoadFrame:TweenSize(UDim2.new(0, 321,0, 107), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+   LoadFrame:TweenSize(UDim2.new(0, 321,0, 107), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, .6, true)
    
    	wait(.6)
    
@@ -105,13 +105,13 @@
    
    	Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Getting Data..."
-   
-   	wait(1)
+   	
+   	Wait(1.5)
    
    	Barload:TweenSize(UDim2.new(0, 100,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Hello " ..game.Players.LocalPlayer.DisplayName.. " From: ".. code
    
-   	wait(1)
+   	Wait(1.5)
    
    if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
    	Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
@@ -120,49 +120,50 @@
    	    Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text =  "Your Device is Mobile"
    	end
-   	wait(1)
+   	Wait(1.5)
    
    	Barload:TweenSize(UDim2.new(0, 200,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Checking Game..."
    
-   	wait(1)
+   	Wait(1.5)
    
     if game.PlaceId == 2753915549 then
            Barload:TweenSize(UDim2.new(0, 250,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Blox Fruit | Sea 1"
    
-   	wait(1)
+   	Wait(1.5)
        elseif game.PlaceId == 4442272183 then
            Barload:TweenSize(UDim2.new(0, 250,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Blox Fruit | Sea 2"
    
-   	wait(1)
+   	Wait(1.5)
        elseif game.PlaceId == 7449423635 then
            Barload:TweenSize(UDim2.new(0, 250,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Blox Fruit | Sea 3"
    
-   	wait(1)
+   	Wait(1.5)
    	  else
    Barload:TweenSize(UDim2.new(0, 250,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Game not Support"
-   	wait(1)
-   	LoadFrame.Visible = false
+   	wait(.6)
+   WindowStroke1:Destroy()
+   	LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
        end
     
    	Barload:TweenSize(UDim2.new(0, 250,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Loading Ui"
    
-   	wait(1)
+   	Wait(1.5)
    
    	Barload:TweenSize(UDim2.new(0, 295,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Getting ready.."
    
-   	wait(1)
+   	Wait(1.5)
    
    	Barload:TweenSize(UDim2.new(0, 295,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
    	LoadText.Text = "Ready!"
    
-   	wait(1)
+   	Wait(1.5)
    	
    	TweenService:Create(
    		Barload,
@@ -182,13 +183,13 @@
    
    	wait(.6)
    WindowStroke1:Destroy()
-   	LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+   	LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, .6, true)
    
    	wait(.5)
    if game.PlaceId == 2753915549 then
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruit", true))()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruitV3", true))()
        elseif game.PlaceId == 4442272183 then
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruit", true))()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruitV3", true))()
        elseif game.PlaceId == 7449423635 then
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruit", true))()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruitV3", true))()
        end
